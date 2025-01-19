@@ -60,8 +60,8 @@ export default {
         h2: createTypography("32px", "140%", "48px", "64px"),
         h3: createTypography("24px", "150%", "38px", "56px"),
         h4: createTypography("20px", "150%", "36px", "56px"),
-        h5: createTypography("16px", "150%", "32px", "48px"),
-        h6: createTypography("14px", "150%", "24px", "36px"),
+        h5: createTypography("18px", "150%", "32px", "48px"),
+        h6: createTypography("16px", "150%", "24px", "36px"),
         p: createTypography("16px", "150%", "16px", "28px", "500", "70%"),
       });
       addComponents({

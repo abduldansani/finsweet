@@ -4,7 +4,7 @@ import Section from "../Section";
 const Testimonials = () => {
   return (
     <Section className="bg-grey bg-opacity-50">
-      <div className="container flex max-lg:flex-col gap-16 xl:gap-28">
+      <div className="container flex max-lg:flex-col gap-10 lg:gap-16 xl:gap-28">
         <div className="max-lg:text-center lg:w-1/3 shrink-0 space-y-2 md:space-y-4">
           <h3 className="leading-tight">What our clients say about us</h3>
           <p className="text-opacity-50">

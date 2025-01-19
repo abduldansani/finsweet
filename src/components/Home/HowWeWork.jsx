@@ -14,17 +14,17 @@ const HowWeWork = () => {
             <br className="max-xl:hidden" /> adipiscing elit, sed do eiusmod
             tempor.
           </p>
-          <Link to="/contact" className="block">
+          <Link to="/contact" className="inline-block">
             <div className="flex items-center gap-4 text-royalBlue font-medium">
               <div className="">Get in touch with us</div>
               <img src={arrowBlue} alt="-" width={24} />
             </div>
           </Link>
         </div>
-        <div className="grid gap-4 sm:gap-6 lg:gap-12 grid-cols-2">
-          {workSteps.map((step, i) => (
-            <div key={i} className="space-y-3 md:space-y-5">
-              <div className="relative flex items-center justify-center w-[50px] h-[50px]">
+        <div className="grid max-sm:gap-x-4 max-sm:gap-y-8 sm:gap-6 lg:gap-12 grid-cols-2">
+          {workSteps.map((step) => (
+            <div key={step.id} className="space-y-3 md:space-y-5">
+              <div className="relative flex items-center justify-center size-[50px]">
                 <img
                   src={numberFrame}
                   alt=""

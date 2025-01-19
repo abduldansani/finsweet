@@ -4,7 +4,7 @@ import Section from "../Section";
 const Hero = () => {
   return (
     <Section>
-      <div className="container flex max-lg:flex-col justify-between items-center md:gap-10 xl:gap-36">
+      <div className="container flex max-lg:flex-col justify-between items-center gap-6 md:gap-10 xl:gap-36">
         <div className="">
           <div className="text-lg font-medium mb-2">About us</div>
           <h1 className="mb-6 xl:mb-8">Our designs solve problems</h1>
@@ -19,7 +19,7 @@ const Hero = () => {
           alt="hero image"
           width={547}
           height={336}
-          className="max-lg:w-[95%]"
+          className="max-lg:w-[95%] max-lg:mx-auto"
         />
       </div>
     </Section>

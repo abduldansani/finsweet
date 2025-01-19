@@ -13,7 +13,7 @@ const Features = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, i) => (
             <div
-              key={i}
+              key={feature.id}
               className="flex flex-col gap-4 p-12 bg-white text-darkBlue"
             >
               <img src={feature.icon} alt="" width={35} height={35} />

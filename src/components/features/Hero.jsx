@@ -18,13 +18,15 @@ const Hero = () => {
             </p>
             <Button>View Pricing</Button>
           </div>
-          <img
-            src={featuresHero}
-            alt="features illustration"
-            width={639}
-            height={409}
-            className="lg:w-1/2 shrink-0 max-lg:w-4/5 mx-auto"
-          />
+          <div className="shrink-0 lg:w-1/2 max-lg:w-4/5 mx-auto max-lg:max-w-[600px]">
+            <img
+              src={featuresHero}
+              alt="features illustration"
+              width={639}
+              height={409}
+              className=""
+            />
+          </div>
         </div>
       </Section>
       <div className="py-20 overflow-hidden">

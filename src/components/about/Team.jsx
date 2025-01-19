@@ -7,8 +7,8 @@ const Team = () => {
       <div className="container">
         <h3 className="text-center mb-12">Meet our team</h3>
         <div className="flex gap-8 justify-center text-center flex-wrap">
-          {team.map((member, i) => (
-            <div key={i} className="py-9 px-12 bg-white">
+          {team.map((member) => (
+            <div key={member.id} className="py-9 px-12 bg-white">
               <img
                 src={member.pic}
                 alt=""

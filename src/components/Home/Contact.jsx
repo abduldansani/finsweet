@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="container px-0 grid md:grid-cols-2 text-white">
         <div className="relative">
           <img src={contactImg} alt="" className="w-full h-full" />
-          <div className="absolute inset-0 bg-tintBlue bg-opacity-50 p-6 md:p-10 xl:p-28 space-y-6">
+          <div className="absolute inset-0 bg-tintBlue bg-opacity-50 p-6 sm:p-10 xl:p-28 space-y-6">
             <h1>Building stellar websites for early startups</h1>
             <div className="font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

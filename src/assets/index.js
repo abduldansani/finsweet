@@ -44,6 +44,8 @@ import post6 from "./images/post6.png";
 
 import readBlog from "./images/readBlog.png";
 
+import menu from "./icons/menu.svg";
+import close from "./icons/close.svg";
 import arrowRightWhite from "./icons/arrowRightWhite.svg";
 import arrowBlue from "./icons/arrowBlue.svg";
 import numberFrame from "./icons/numberFrame.svg";
@@ -136,6 +138,8 @@ export {
   readBlog,
 
   // HOME ICONS
+  menu,
+  close,
   arrowRightWhite,
   arrowBlue,
   numberFrame,

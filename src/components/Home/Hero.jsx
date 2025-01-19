@@ -6,7 +6,7 @@ import Section from "../Section";
 const Hero = () => {
   return (
     <Section className="bg-tintBlue text-white">
-      <div className="container flex justify-between max-lg:flex-col-reverse gap-10 xl:gap-16">
+      <div className="container flex justify-between max-lg:flex-col-reverse items-center gap-10 lg:gap-4 xl:gap-16">
         <div className="space-y-6 xl:space-y-12 text-center lg:text-start">
           <h1>Building stellar websites for early startups</h1>
           <p>
@@ -28,11 +28,9 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <img
-          src={heroImg}
-          alt="hero"
-          className="lg:w-1/2 shrink-0 max-lg:w-4/5 mx-auto"
-        />
+        <div className="shrink-0 lg:w-1/2 max-lg:w-4/5 mx-auto max-lg:max-w-[600px]">
+          <img src={heroImg} alt="hero" className="" />
+        </div>
       </div>
     </Section>
   );

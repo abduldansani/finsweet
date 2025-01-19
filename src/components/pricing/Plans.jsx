@@ -17,7 +17,7 @@ const Plans = () => {
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`py-14 px-12 flex flex-col gap-12 justify-between overflow-hidden ${
+              className={`py-14 px-12 flex flex-col gap-6 lg:gap-12 justify-between overflow-hidden ${
                 i === 1 ? "bg-tintBlue text-white relative " : "bg-grey"
               }`}
             >
@@ -26,7 +26,7 @@ const Plans = () => {
                   i === 1 ? "block" : "hidden"
                 }`}
               />
-              <div className="mb-5 flex gap-2 items-center">
+              <div className="lg:mb-5 flex gap-2 items-center">
                 <h3>{plan.price}</h3>
                 <p
                   className={`text-opacity-100 ${

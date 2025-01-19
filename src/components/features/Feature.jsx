@@ -1,7 +1,7 @@
 const Feature = ({ i, feature }) => {
   return (
     <div
-      className={`py-10 md:py-16 xl:py-32 ${
+      className={`py-10 md:py-16 ${
         i === 1 ? "bg-grey" : i === 3 ? "bg-yellow bg-opacity-10" : "bg-white"
       }`}
     >

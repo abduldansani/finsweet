@@ -7,10 +7,16 @@ const Process = () => {
     <Section>
       <div className="container">
         <h3 className="text-center mb-12">The process we follow</h3>
-        <div className="grid max-md:grid-cols-2 grid-cols-4 gap-8">
-          {process.map((step, i) => (
-            <div key={i} className="">
-              <img src={line} alt="" className="mb-8" width={272} height={24} />
+        <div className="grid max-md:grid-cols-2 grid-cols-4 gap-x-8 gap-y-12">
+          {process.map((step) => (
+            <div key={step.id} className="">
+              <img
+                src={line}
+                alt="-"
+                className="mb-8"
+                width={272}
+                height={24}
+              />
               <h6 className="mb-2">{step.title}</h6>
               <p>{step.content}</p>
             </div>

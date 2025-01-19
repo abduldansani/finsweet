@@ -72,24 +72,28 @@ export const navLinks = [
 
 export const workSteps = [
   {
+    id: 1,
     number: "01",
     title: "Strategy",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
   },
   {
+    id: 2,
     number: "02",
     title: "Wireframing",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
   },
   {
+    id: 3,
     number: "03",
     title: "Design",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .",
   },
   {
+    id: 4,
     number: "04",
     title: "Development",
     description:
@@ -99,36 +103,42 @@ export const workSteps = [
 
 export const features = [
   {
+    id: 1,
     icon: clientFirst,
     title: "Uses Client First",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
   },
   {
+    id: 2,
     icon: check,
     title: "Two Free Revision Round",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
   },
   {
+    id: 3,
     icon: customization,
     title: "ustomization",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
   },
   {
+    id: 4,
     icon: support,
     title: "24/7 Support",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
   },
   {
+    id: 5,
     icon: quick,
     title: "Quick Delivery",
     description:
       "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
   },
   {
+    id: 6,
     icon: handsOn,
     title: "Hands-on approach",
     description:
@@ -138,30 +148,35 @@ export const features = [
 
 export const faq = [
   {
+    id: 1,
     number: "01",
     question: "How much time does it take?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 2,
     number: "02",
     question: "What is your class naming convention?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 3,
     number: "03",
     question: "How do you communicate?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 4,
     number: "04",
     question: "I have a bigger project. Can you handle it?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 5,
     number: "05",
     question: "What is your class naming convention?",
     answer:
@@ -171,6 +186,7 @@ export const faq = [
 
 export const blog = [
   {
+    id: 1,
     img: blog1,
     title:
       "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
@@ -179,6 +195,7 @@ export const blog = [
     date: "19 Jan 2022",
   },
   {
+    id: 2,
     img: blog2,
     title:
       "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
@@ -187,6 +204,7 @@ export const blog = [
     date: "19 Jan 2022",
   },
   {
+    id: 3,
     img: blog3,
     title:
       "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
@@ -200,18 +218,22 @@ export const blog = [
 
 export const process = [
   {
+    id: 1,
     title: "Planning",
     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
   },
   {
+    id: 2,
     title: "Conception",
     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
   },
   {
+    id: 3,
     title: "Design",
     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
   },
   {
+    id: 4,
     title: "Development",
     content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
   },
@@ -219,18 +241,21 @@ export const process = [
 
 export const benefits = [
   {
+    id: 1,
     icon: handsOn,
     title: "Customize with ease",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
   },
   {
+    id: 2,
     icon: customization,
     title: "Perfectly Responsive",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
   },
   {
+    id: 3,
     icon: clientFirst,
     title: "Friendly Support",
     description:
@@ -242,21 +267,25 @@ export const usersLogo = [logo1, logo2, logo3, logo4, logo5];
 
 export const team = [
   {
+    id: 1,
     pic: johnSmith,
     name: "John Smith",
     position: "CEO",
   },
   {
+    id: 2,
     pic: simonAdams,
     name: "Simon Adams",
     position: "CTO",
   },
   {
+    id: 3,
     pic: paulJones,
     name: "Paul Jones",
     position: "Design Lead",
   },
   {
+    id: 4,
     pic: saraHardin,
     name: "Sara Hardin",
     position: "Project Manager",
@@ -305,18 +334,21 @@ export const plans = [
 
 export const fBenefits = [
   {
+    id: 1,
     icon: handsOn,
     title: "Customize with ease",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
   },
   {
+    id: 2,
     icon: customization,
     title: "Perfectly Responsive",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
   },
   {
+    id: 3,
     icon: support,
     title: "Friendly Support",
     description:
@@ -326,6 +358,7 @@ export const fBenefits = [
 
 export const fFeatures = [
   {
+    id: 1,
     img: clientFirstFeatures,
     summary: "Use Client-first",
     title: "Top agencies and freelancers around the world use Client-first ",
@@ -333,6 +366,7 @@ export const fFeatures = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
   {
+    id: 2,
     img: revisionRounds,
     summary: "Free Revision Rounds",
     title: "Get free Revisions and one week of free maintenance",
@@ -340,6 +374,7 @@ export const fFeatures = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
   {
+    id: 3,
     img: supportFeatures,
     summary: "24/7 Support",
     title: "Working with us, you will be getting 24/7 priority support",
@@ -347,6 +382,7 @@ export const fFeatures = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
   {
+    id: 4,
     img: quickDelivery,
     summary: "Quick Delivery",
     title: "Guranteed 1 week delivery for standard five pager website",

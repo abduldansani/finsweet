@@ -18,11 +18,12 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="pricing" element={<Pricing />} />
         <Route path="features" element={<Features />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="blog" element={<Blog />} />
+
         <Route path="projects" element={<Portfolio />} />
         <Route path="casestudy" element={<ReadStudy />} />
-        <Route path="blog" element={<Blog />} />
         <Route path="readblog" element={<BlogRead />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="faq" element={<Faq />} />
