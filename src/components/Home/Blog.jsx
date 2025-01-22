@@ -22,7 +22,7 @@ const Blog = () => {
               <h6>{post.title}</h6>
               <p className="text-opacity-70">{post.content}</p>
             </div>
-            <Link className="flex items-center gap-4">
+            <Link to={`/blog/${post.id}`} className="flex items-center gap-4">
               <div className="font-medium">Read More</div>
               <img src={arrowDarkBlue} alt="-" width={24} />
             </Link>

@@ -33,7 +33,7 @@ const Projects = () => {
                   Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                   aliquam{" "}
                 </p>
-                <Link className="flex items-center gap-4">
+                <Link to="/projects/1" className="flex items-center gap-4">
                   <div className="font-medium text-yellow">View project</div>
                   <img src={arrowYellow} alt="-" width={24} />
                 </Link>
@@ -41,8 +41,12 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row lg:flex-col gap-8 overflow-hidden justify-between">
-            <img src={project2} alt="" className="md:w-[45%] lg:w-full" />
-            <img src={project3} alt="" className="md:w-[45%] lg:w-full" />
+            <Link to="/projects/2">
+              <img src={project2} alt="" className="md:w-[45%] lg:w-full" />
+            </Link>
+            <Link to="/projects/3">
+              <img src={project3} alt="" className="md:w-[45%] lg:w-full" />
+            </Link>
           </div>
         </div>
       </div>

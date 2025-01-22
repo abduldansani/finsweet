@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { arrowRightWhite, contactImg } from "../../assets";
 import Button from "../Button";
 import Section from "../Section";
@@ -41,21 +42,25 @@ const Contact = () => {
                 placeholder="Paste your Figma design URL"
               />
             </div>
-            <Button isLarge className="w-full mt-10">
-              Send an Inquiry
-            </Button>
+            <Link to="/contact">
+              <Button isLarge className="w-full mt-10">
+                Send an Inquiry
+              </Button>
+            </Link>
           </form>
-          <Button isText isWhite className="w-full">
-            <div className="flex gap-4 items-center justify-center">
-              <div className="font-medium">Get in touch with us</div>
-              <img
-                src={arrowRightWhite}
-                alt=""
-                width={24}
-                className="group-hover:opacity-30"
-              />
-            </div>
-          </Button>
+          <Link to="/contact">
+            <Button isText isWhite className="w-full">
+              <div className="flex gap-4 items-center justify-center">
+                <div className="font-medium">Get in touch with us</div>
+                <img
+                  src={arrowRightWhite}
+                  alt=""
+                  width={24}
+                  className="group-hover:opacity-30"
+                />
+              </div>
+            </Button>
+          </Link>
         </div>
       </div>
     </Section>

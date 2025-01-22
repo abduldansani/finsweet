@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Button from "../Button";
 
 const Cta = () => {
@@ -12,7 +13,9 @@ const Cta = () => {
           ultricies <br className="max-md:hidden" /> nec dolor sit amet,
           scelerisque cursus purus.
         </p>
-        <Button>Contact Us</Button>
+        <Link to="/contact" className="block">
+          <Button>Contact Us</Button>
+        </Link>
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ const Testimonials = () => {
                 <div className="text-xs font-medium">Vice President</div>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 cursor-not-allowed">
               <img
                 src={chevronLeftDark}
                 alt="-"

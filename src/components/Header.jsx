@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 import {
   motion,
@@ -53,9 +53,11 @@ const Header = () => {
               </NavLink>
             ))}
           </nav>
-          <button className="px-12 py-4 xl:py-6 border-2 border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors">
-            Contact us
-          </button>
+          <Link to="contact">
+            <button className="px-12 py-4 xl:py-6 border-2 border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors">
+              Contact us
+            </button>
+          </Link>
         </div>
         <button
           onClick={() => setShowMenu(!showMenu)}
@@ -87,12 +89,14 @@ const Header = () => {
                 {link.title}
               </NavLink>
             ))}
-            <button
-              onClick={() => setShowMenu(false)}
-              className="mt-8 py-2 px-6 border-2 text-white border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors"
-            >
-              Contact us
-            </button>
+            <Link to="contact">
+              <button
+                onClick={() => setShowMenu(false)}
+                className="mt-8 py-2 px-6 border-2 text-white border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors"
+              >
+                Contact us
+              </button>
+            </Link>
           </motion.nav>
         )}
       </AnimatePresence>

@@ -25,7 +25,7 @@ const Hero = () => {
           illusion which lifts the horizon of the sea to the level of the
           spectator on a hillside.
         </p>
-        <p className="text-royalBlue">Read more</p>
+        <p className="text-royalBlue cursor-not-allowed">Read more</p>
       </div>
     </Section>
   );

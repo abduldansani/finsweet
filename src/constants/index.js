@@ -394,18 +394,22 @@ export const fFeatures = [
 // WORK PAGE
 export const categoryLinks = [
   {
+    id: 1,
     text: "All",
     link: "all",
   },
   {
+    id: 2,
     text: "UI Design",
     link: "ui",
   },
   {
+    id: 3,
     text: "Webflow Design",
     link: "webflow",
   },
   {
+    id: 4,
     text: "Figma Design",
     link: "figma",
   },
@@ -413,36 +417,42 @@ export const categoryLinks = [
 
 export const works = [
   {
+    id: 1,
     img: work1,
     title: "Template 1",
     content:
       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
   },
   {
+    id: 2,
     img: work2,
     title: "Template 2",
     content:
       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
   },
   {
+    id: 3,
     img: work3,
     title: "Template 3",
     content:
       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
   },
   {
+    id: 4,
     img: work4,
     title: "Template 4",
     content:
       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
   },
   {
+    id: 5,
     img: work5,
     title: "Template 5",
     content:
       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
   },
   {
+    id: 6,
     img: work6,
     title: "Template 6",
     content:
@@ -510,50 +520,56 @@ export const keywords = [
 // BLOG
 export const blogPosts = [
   {
+    id: 1,
     img: post1,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "01: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },
   {
+    id: 2,
     img: post2,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "02: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },
   {
+    id: 3,
     img: post3,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "03: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },
   {
+    id: 4,
     img: post4,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "04: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },
   {
+    id: 5,
     img: post5,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "05: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },
   {
+    id: 6,
     img: post6,
     date: "27 Jan 2021",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+      "06: How one Webflow user grew his single person consultancy from $0-100K in 14 months",
     content:
       "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
   },

@@ -3,6 +3,7 @@ import Section from "../Section";
 import { plans } from "../../constants";
 import { pointerDisabled, pointerEnabled } from "../../assets";
 import Button from "../Button";
+import { Link } from "react-router";
 
 const Plans = () => {
   return (
@@ -10,8 +11,9 @@ const Plans = () => {
       <div className="container">
         <h2 className="text-center lg:mb-4">Our Pricing Plans</h2>
         <p className="font-medium text-center mb-8 md:mb-16">
-          When you’re ready to go beyond prototyping in Figma, Webflow is <br />{" "}
-          ready to help you bring your designs to life — without coding them.
+          When you’re ready to go beyond prototyping in Figma, Webflow is{" "}
+          <br className="max-md:hidden" /> ready to help you bring your designs
+          to life — without coding them.
         </p>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {plans.map((plan, i) => (
@@ -60,9 +62,11 @@ const Plans = () => {
                     </div>
                   ))}
               </div>
-              <Button isSecondary={i !== 1}>
-                {i === 2 ? "Get started" : "Contact us"}
-              </Button>
+              <Link to="/contact">
+                <Button isSecondary={i !== 1} className="w-full">
+                  {i === 2 ? "Contact us" : "Get started"}
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

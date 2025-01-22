@@ -1,4 +1,1 @@
-HOME: view our projects
-HOME: testimonials
-
-ABOUT: animate partner's logo
+ABOUT, FEATURES: animate partner's logo

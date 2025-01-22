@@ -11,6 +11,9 @@ import BlogRead from "./components/blogRead/BlogRead";
 import ContactUs from "./components/contact/ContactUs";
 import PrivacyPolicy from "./components/policy/PrivacyPolicy";
 import Faq from "./components/Home/Faq";
+import ScrollToTop from "./components/ScrollToTop";
+import ViewProject from "./components/projects/ViewProject";
+import BlogNotFound from "./components/blogRead/BlogNotFound";
 
 function App() {
   return (
@@ -21,13 +24,15 @@ function App() {
         <Route path="features" element={<Features />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="faq" element={<Faq />} />
 
         <Route path="projects" element={<Portfolio />} />
-        <Route path="casestudy" element={<ReadStudy />} />
+        <Route path="project" element={<ReadStudy />} />
         <Route path="readblog" element={<BlogRead />} />
         <Route path="contact" element={<ContactUs />} />
-        <Route path="faq" element={<Faq />} />
         <Route path="privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="projects/:id" element={<ViewProject />} />
+        <Route path="blog/:id" element={<BlogNotFound />} />
       </Route>
     </Routes>
   );
