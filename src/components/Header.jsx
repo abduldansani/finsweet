@@ -73,7 +73,7 @@ const Header = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="lg:hidden h-screen fixed top-0 left-0 bg-tintBlue shadow-xl w-1/2 max-w-96 pt-8 pl-4 flex flex-col gap-4"
+            className="lg:hidden h-dvh fixed top-0 left-0 bg-tintBlue shadow-xl w-1/2 max-w-96 pt-8 pl-4 flex flex-col gap-4"
           >
             {navLinks.map((link, i) => (
               <NavLink
