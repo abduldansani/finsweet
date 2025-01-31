@@ -1,26 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { categoryLinks, works } from "../../constants";
 import { Link } from "react-router";
 import Section from "../Section";
 import { arrowDarkBlue } from "../../assets";
-import { motion } from "motion/react";
 
 const AllProjects = () => {
   const [category, setCategory] = useState("all");
-  const [parentWidth, setParentWidth] = useState(0);
-  const parent = useRef();
-  useEffect(() => {
-    setParentWidth(parent.current.scrollWidth - parent.current.offsetWidth);
-  }, []);
+
   return (
     <Section>
       <div className="container">
-        <motion.div ref={parent} className="overflow-hidden">
-          <motion.div
-            drag="x"
-            dragConstraints={{ right: 0, left: -parentWidth }}
-            className="cursor-grab flex items-center gap-4 mb-12 text-nowrap mx-auto sm:justify-center"
-          >
+        <div className="">
+          <div className="mx-auto mb-12 flex items-center gap-4 overflow-scroll text-nowrap no-scrollbar sm:justify-center">
             {categoryLinks.map((link) => (
               <button
                 key={link.id}
@@ -34,8 +25,8 @@ const AllProjects = () => {
                 {link.text}
               </button>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         <div className="grid gap-x-8 gap-y-16 md:grid-cols-2">
           {works.map((work) => (
             <div key={work.id} className="">

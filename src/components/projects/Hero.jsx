@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <Section className="bg-grey">
       <div className="container max-w-[733px] text-center">
-        <p className="font-medium mb-4">What we created</p>
+        <p className="mb-4 font-medium">What we created</p>
         <h2 className="mb-6">Our Work Portfolio</h2>
-        <p className="font-medium mb-8">
+        <p className="mb-8 font-medium">
           We help teams create great digital products by providing them with
           tools and technology to make the design-to-code process universally
           accessible.
         </p>
-        <div className="mt-8 flex gap-6 justify-center">
+        <div className="mt-8 flex justify-center gap-6">
           {socialMediaDark.map((social, i) => (
             <Link key={i} to={social.link}>
               <img

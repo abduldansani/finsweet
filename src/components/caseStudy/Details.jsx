@@ -17,7 +17,7 @@ const Details = () => {
       </p>
       <ul className="space-y-4">
         {aboutTheProject.map((item, i) => (
-          <li key={i} className="list-disc list-inside opacity-70">
+          <li key={i} className="list-inside list-disc opacity-70">
             {item}
           </li>
         ))}
@@ -41,7 +41,7 @@ const Details = () => {
       </p>
       <ul className="space-y-2 lg:space-y-4">
         {howWeDoIt.map((item, i) => (
-          <li key={i} className="list-disc list-inside opacity-70">
+          <li key={i} className="list-inside list-disc opacity-70">
             {item}
           </li>
         ))}

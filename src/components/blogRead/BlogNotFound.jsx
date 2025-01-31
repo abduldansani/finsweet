@@ -9,7 +9,7 @@ const BlogNotFound = () => {
         <h4 className="text-center">
           Sorry! details about this blog post is not available at the moment.
           You can view a sample{" "}
-          <Link to="/readblog" className="underline text-tintBlue">
+          <Link to="/readblog" className="text-tintBlue underline">
             blog details page
           </Link>
         </h4>

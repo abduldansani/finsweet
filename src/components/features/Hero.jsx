@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <>
       <Section className="bg-tintBlue">
-        <div className="container flex max-lg:flex-col-reverse justify-between gap-10 xl:gap-16 text-white items-center">
-          <div className="space-y-6 xl:space-y-12 text-center lg:text-start">
+        <div className="container flex items-center justify-between gap-10 text-white max-lg:flex-col-reverse xl:gap-16">
+          <div className="space-y-6 text-center lg:text-start xl:space-y-12">
             <h1>
               All the features <br className="max-xl:hidden" /> you need
             </h1>
@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
             <Button>View Pricing</Button>
           </div>
-          <div className="shrink-0 lg:w-1/2 max-lg:w-4/5 mx-auto max-lg:max-w-[600px]">
+          <div className="mx-auto shrink-0 max-lg:w-4/5 max-lg:max-w-[600px] lg:w-1/2">
             <img
               src={featuresHero}
               alt="features illustration"
@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
         </div>
       </Section>
-      <div className="py-20 overflow-hidden">
+      <div className="overflow-hidden py-20">
         <Users />
       </div>
     </>

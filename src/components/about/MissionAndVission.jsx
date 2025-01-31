@@ -5,7 +5,7 @@ const MissionAndVission = () => {
   return (
     <Section className="bg-accent">
       <div className="container space-y-16 lg:space-y-24">
-        <div className="flex items-center max-md:flex-col justify-between gap-5 lg:gap-10 xl:gap-36">
+        <div className="flex items-center justify-between gap-5 max-md:flex-col lg:gap-10 xl:gap-36">
           <div className="space-y-4">
             <div className="font-medium">Our Mission</div>
             <h3>Inspire, Innovate, Share</h3>
@@ -24,7 +24,7 @@ const MissionAndVission = () => {
             className="w-full md:w-1/2"
           />
         </div>
-        <div className="flex max-md:flex-col-reverse items-center gap-5 lg:gap-10 xl:gap-36 justify-between">
+        <div className="flex items-center justify-between gap-5 max-md:flex-col-reverse lg:gap-10 xl:gap-36">
           <img
             src={vision}
             alt="Our mission"

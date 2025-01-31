@@ -6,7 +6,7 @@ const Feature = ({ i, feature }) => {
       }`}
     >
       <div
-        className={`container flex gap-10 lg:gap-20 items-center flex-col-reverse ${
+        className={`container flex flex-col-reverse items-center gap-10 lg:gap-20 ${
           i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
         }`}
       >

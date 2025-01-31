@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const Blog = () => {
   return (
     <Section>
-      <div className="container max-lg:px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="container grid gap-x-8 gap-y-12 max-lg:px-6 md:grid-cols-2 lg:grid-cols-3">
         {blog.map((post) => (
           <div key={post.id} className="space-y-8">
             <img

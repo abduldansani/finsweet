@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <Section>
       <div className="container max-w-[840px]">
         <h2 className="mb-4 text-center">Privacy Policy</h2>
-        <p className="font-medium mb-8 lg:mb-16 text-center">
+        <p className="mb-8 text-center font-medium lg:mb-16">
           When you’re ready to go beyond prototyping in Figma, Webflow’s{" "}
           <br className="max-md:hidden" />
           ready to help you bring your{" "}
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris.
         </p>
-        <ul className="font-medium list-disc list-inside opacity-70 mb-3 lg:mb-6">
+        <ul className="mb-3 list-inside list-disc font-medium opacity-70 lg:mb-6">
           <li>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
           </li>

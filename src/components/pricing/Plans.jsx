@@ -10,25 +10,25 @@ const Plans = () => {
     <Section>
       <div className="container">
         <h2 className="text-center lg:mb-4">Our Pricing Plans</h2>
-        <p className="font-medium text-center mb-8 md:mb-16">
+        <p className="mb-8 text-center font-medium md:mb-16">
           When you’re ready to go beyond prototyping in Figma, Webflow is{" "}
           <br className="max-md:hidden" /> ready to help you bring your designs
           to life — without coding them.
         </p>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`py-14 px-12 flex flex-col gap-6 lg:gap-12 justify-between overflow-hidden ${
-                i === 1 ? "bg-tintBlue text-white relative " : "bg-grey"
+              className={`flex flex-col justify-between gap-6 overflow-hidden px-12 py-14 lg:gap-12 ${
+                i === 1 ? "relative bg-tintBlue text-white" : "bg-grey"
               }`}
             >
               <div
-                className={`absolute left-1/2 top-0 -translate-x-1/2 w-[1000px] h-5/6 rounded-b-full bg-white bg-opacity-[0.06] ${
+                className={`absolute left-1/2 top-0 h-5/6 w-[1000px] -translate-x-1/2 rounded-b-full bg-white bg-opacity-[0.06] ${
                   i === 1 ? "block" : "hidden"
                 }`}
               />
-              <div className="lg:mb-5 flex gap-2 items-center">
+              <div className="flex items-center gap-2 lg:mb-5">
                 <h3>{plan.price}</h3>
                 <p
                   className={`text-opacity-100 ${

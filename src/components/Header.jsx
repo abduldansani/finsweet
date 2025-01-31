@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link, NavLink } from "react-router";
@@ -16,6 +16,17 @@ const Header = () => {
 
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
+
+  useEffect(() => {
+    showMenu
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showMenu]);
+
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (
@@ -33,18 +44,18 @@ const Header = () => {
     <motion.header
       variants={headerVar}
       animate={hidden ? "hidden" : "visible"}
-      className="bg-tintBlue sticky top-0 shadow-2xl z-50"
+      className="sticky top-0 z-50 bg-tintBlue shadow-2xl"
     >
       <div className="container flex items-center justify-between py-6 lg:py-4">
         <img src={logo} alt="logo" width={122} height={25} />
-        <div className="hidden lg:flex ml-auto font-medium text-colorWhite items-center">
+        <div className="ml-auto hidden items-center font-medium text-colorWhite lg:flex">
           <nav className="max-lg:hidden">
             {navLinks.map((link, i) => (
               <NavLink
                 key={i}
                 to={link.href}
                 className={({ isActive }) =>
-                  `mr-6 font-medium hover:text-white transition-colors ${
+                  `mr-6 font-medium transition-colors hover:text-white ${
                     isActive ? "text-white" : "text-linkDefault"
                   }`
                 }
@@ -54,7 +65,7 @@ const Header = () => {
             ))}
           </nav>
           <Link to="contact">
-            <button className="px-12 py-4 xl:py-6 border-2 border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors">
+            <button className="w-fit rounded-full border-2 border-grey border-opacity-20 px-12 py-4 transition-colors hover:text-linkDefault lg:ml-5 xl:py-6">
               Contact us
             </button>
           </Link>
@@ -73,7 +84,7 @@ const Header = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="lg:hidden h-dvh fixed top-0 left-0 bg-tintBlue shadow-xl w-1/2 max-w-96 pt-8 pl-4 flex flex-col gap-4"
+            className="fixed left-0 top-0 flex h-dvh w-1/2 max-w-96 flex-col gap-4 bg-tintBlue pl-4 pt-8 shadow-xl lg:hidden"
           >
             {navLinks.map((link, i) => (
               <NavLink
@@ -81,7 +92,7 @@ const Header = () => {
                 to={link.href}
                 onClick={() => setShowMenu(false)}
                 className={({ isActive }) =>
-                  `font-medium hover:text-white transition-colors ${
+                  `font-medium transition-colors hover:text-white ${
                     isActive ? "text-white" : "text-linkDefault"
                   }`
                 }
@@ -92,7 +103,7 @@ const Header = () => {
             <Link to="contact">
               <button
                 onClick={() => setShowMenu(false)}
-                className="mt-8 py-2 px-6 border-2 text-white border-grey border-opacity-20 rounded-full lg:ml-5 w-fit hover:text-linkDefault transition-colors"
+                className="mt-8 w-fit rounded-full border-2 border-grey border-opacity-20 px-6 py-2 text-white transition-colors hover:text-linkDefault lg:ml-5"
               >
                 Contact us
               </button>

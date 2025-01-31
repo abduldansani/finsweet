@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <Section className="bg-white">
       <div className="container space-y-6 lg:space-y-12">
-        <div className="flex max-sm:flex-col justify-between sm:items-center">
+        <div className="flex justify-between max-sm:flex-col sm:items-center">
           <h2>View our projects</h2>
           <Link to="/projects">
             <div className="flex items-center gap-4">
@@ -24,12 +24,12 @@ const Projects = () => {
         <div className="flex gap-8 max-lg:flex-col">
           <div className="relative">
             <img src={project1} alt="project-1" className="h-full" />
-            <div className="absolute inset-0 lg:w-3/4 xl:w-1/2 h-full px-4 md:px-12 flex flex-col justify-end bg-gradient-to-tl from-tintBlue to-[#1C1E536B]">
-              <div className="text-white pb-4 md:pb-20 mt-auto">
-                <div className="text-xl md:text-2xl font-semibold">
+            <div className="absolute inset-0 flex h-full flex-col justify-end bg-gradient-to-tl from-tintBlue to-[#1C1E536B] px-4 md:px-12 lg:w-3/4 xl:w-1/2">
+              <div className="mt-auto pb-4 text-white md:pb-20">
+                <div className="text-xl font-semibold md:text-2xl">
                   Workhub office Webflow Webflow Design
                 </div>
-                <p className="mt-2 mb-5 md:mt-7 md:mb-12 font-medium">
+                <p className="mb-5 mt-2 font-medium md:mb-12 md:mt-7">
                   Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                   aliquam{" "}
                 </p>
@@ -40,7 +40,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row lg:flex-col gap-8 overflow-hidden justify-between">
+          <div className="flex flex-col justify-between gap-8 overflow-hidden md:flex-row lg:flex-col">
             <Link to="/projects/2">
               <img src={project2} alt="" className="md:w-[45%] lg:w-full" />
             </Link>

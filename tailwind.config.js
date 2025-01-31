@@ -7,7 +7,7 @@ const createTypography = (
   lgFontSize,
   lgLineHeight,
   fontWeight = "600",
-  opacity = "100%"
+  opacity = "100%",
 ) => ({
   fontSize,
   lineHeight,
@@ -63,7 +63,7 @@ export default {
     },
   },
   plugins: [
-    plugin(function ({ addBase, addComponents }) {
+    plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({
         h1: createTypography("40px", "130%", "54px", "74px"),
         h2: createTypography("32px", "140%", "48px", "64px"),
@@ -76,6 +76,15 @@ export default {
       addComponents({
         ".container": {
           "@apply max-w-7xl mx-auto px-4 lg:px-8": {},
+        },
+      });
+      addUtilities({
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
         },
       });
     }),

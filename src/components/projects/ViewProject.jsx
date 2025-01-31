@@ -9,7 +9,7 @@ const ViewProject = () => {
         <h4 className="text-center">
           Sorry! details about this project is not available at the moment. You
           can view{" "}
-          <Link to="/project" className="underline text-tintBlue">
+          <Link to="/project" className="text-tintBlue underline">
             a sample project detail page
           </Link>
         </h4>

@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Cta = () => {
   return (
-    <section className="mt-10 mb-10 md:mb-16 xl:mb-32">
+    <section className="mb-10 mt-10 md:mb-16 xl:mb-32">
       <div className="container space-y-5 text-center">
         <h2>
           Let's build something great <br className="max-md:hidden" /> together

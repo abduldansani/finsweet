@@ -4,10 +4,10 @@ import Section from "../Section";
 const WhoWeAre = () => {
   return (
     <Section className="py-0">
-      <div className="container px-0 bg-greyVariant pt-20">
+      <div className="container bg-greyVariant px-0 pt-20">
         <div className="px-8 md:px-20">
-          <div className="font-medium mb-2">Who we are</div>
-          <div className="flex justify-between max-md:flex-col gap-10 lg:gap-14">
+          <div className="mb-2 font-medium">Who we are</div>
+          <div className="flex justify-between gap-10 max-md:flex-col lg:gap-14">
             <div className="space-y-4">
               <h3>Goal focussed</h3>
               <p className="text-opacity-70">
@@ -28,7 +28,7 @@ const WhoWeAre = () => {
             </div>
           </div>
         </div>
-        <img src={about} alt="who we are" className="w-full mt-20" />
+        <img src={about} alt="who we are" className="mt-20 w-full" />
       </div>
     </Section>
   );

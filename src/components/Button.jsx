@@ -13,16 +13,16 @@ const Button = ({
     <button
       className={`group rounded-primary font-medium ${className} ${
         isText
-          ? "bg-transparent text-colorBlack hover:text-textButtonHover !px-2"
+          ? "bg-transparent !px-2 text-colorBlack hover:text-textButtonHover"
           : isSecondary
-          ? "bg-darkBlue text-white hover:bg-secondaryHover"
-          : "bg-yellow hover:bg-buttonHover"
+            ? "bg-darkBlue text-white hover:bg-secondaryHover"
+            : "bg-yellow hover:bg-buttonHover"
       } ${
         isSmall
-          ? "text-base py-2 px-6 md:py-[18px] md:px-5"
+          ? "px-6 py-2 text-base md:px-5 md:py-[18px]"
           : isLarge
-          ? "text-2xl py-2 px-6 md:px-12 md:py-[18px]"
-          : "py-2 px-6 md:px-12 md:py-[18px] text-lg"
+            ? "px-6 py-2 text-2xl md:px-12 md:py-[18px]"
+            : "px-6 py-2 text-lg md:px-12 md:py-[18px]"
       } ${isWhite ? "text-colorWhite" : "text-colorDark"}`}
     >
       {children}

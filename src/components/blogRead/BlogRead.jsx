@@ -10,7 +10,7 @@ const BlogRead = () => {
             A UX Case Study on Creating a <br className="max-md:hidden" />{" "}
             Studious Environment for Students
           </h2>
-          <div className="font-medium mb-12">
+          <div className="mb-12 font-medium">
             <span className="text-opacity-[87%]">Andrew Jonson</span> Posted on
             27th January 2021
           </div>
@@ -23,7 +23,7 @@ const BlogRead = () => {
           />
         </div>
       </Section>
-      <section className="px-4 max-w-[840px] mx-auto">
+      <section className="mx-auto max-w-[840px] px-4">
         <h3 className="mb-4 lg:mb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h3>
@@ -56,7 +56,7 @@ const BlogRead = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <ul className="font-medium list-disc list-inside opacity-70 mb-3 lg:mb-6">
+        <ul className="mb-3 list-inside list-disc font-medium opacity-70 lg:mb-6">
           <li>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
           </li>
@@ -83,7 +83,7 @@ const BlogRead = () => {
         </p>
         <img src={readBlog} alt="-" className="w-full" />
       </section>
-      <section className="max-w-[840px] mx-auto px-4 py-8 lg:py-14">
+      <section className="mx-auto max-w-[840px] px-4 py-8 lg:py-14">
         <h3 className="mb-4 lg:mb-8">Ut enim ad minim veniam, quis nostrud.</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

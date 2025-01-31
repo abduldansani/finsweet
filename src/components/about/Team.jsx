@@ -5,10 +5,10 @@ const Team = () => {
   return (
     <Section className="bg-grey">
       <div className="container">
-        <h3 className="text-center mb-12">Meet our team</h3>
-        <div className="flex gap-8 justify-center text-center flex-wrap">
+        <h3 className="mb-12 text-center">Meet our team</h3>
+        <div className="flex flex-wrap justify-center gap-8 text-center">
           {team.map((member) => (
-            <div key={member.id} className="py-9 px-12 bg-white">
+            <div key={member.id} className="bg-white px-12 py-9">
               <img
                 src={member.pic}
                 alt=""

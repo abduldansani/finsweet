@@ -6,8 +6,8 @@ const Process = () => {
   return (
     <Section>
       <div className="container">
-        <h3 className="text-center mb-12">The process we follow</h3>
-        <div className="grid max-md:grid-cols-2 grid-cols-4 gap-x-8 gap-y-12">
+        <h3 className="mb-12 text-center">The process we follow</h3>
+        <div className="grid grid-cols-4 gap-x-8 gap-y-12 max-md:grid-cols-2">
           {process.map((step) => (
             <div key={step.id} className="">
               <img

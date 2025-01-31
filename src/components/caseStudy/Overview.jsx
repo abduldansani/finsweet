@@ -7,11 +7,11 @@ const Overview = () => {
   return (
     <Section>
       <div className="container">
-        <h6 className="bg-opacity-80 mb-3">Web design and development</h6>
+        <h6 className="mb-3 bg-opacity-80">Web design and development</h6>
         <h2 className="mb-2 md:mb-4">
           Finsweet Design case <br className="max-md:hidden" /> studies
         </h2>
-        <p className="font-medium mb-12 lg:w-3/4">
+        <p className="mb-12 font-medium lg:w-3/4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -25,7 +25,7 @@ const Overview = () => {
           height={641}
           className="mb-12 w-full"
         />
-        <div className="pb-8 border-b-2 border-b-darkBlue border-opacity-30 flex justify-between items-center flex-wrap gap-10">
+        <div className="flex flex-wrap items-center justify-between gap-10 border-b-2 border-b-darkBlue border-opacity-30 pb-8">
           {studySummary.map((item, i) => (
             <div key={i} className="space-y-1">
               <div className="font-medium text-opacity-80">{item.title}</div>

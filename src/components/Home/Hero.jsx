@@ -7,14 +7,14 @@ import { Link } from "react-router";
 const Hero = () => {
   return (
     <Section className="bg-tintBlue text-white">
-      <div className="container flex justify-between max-lg:flex-col-reverse items-center gap-10 lg:gap-4 xl:gap-16">
-        <div className="space-y-6 xl:space-y-12 text-center lg:text-start">
+      <div className="container flex items-center justify-between gap-10 max-lg:flex-col-reverse lg:gap-4 xl:gap-16">
+        <div className="space-y-6 text-center lg:text-start xl:space-y-12">
           <h1>Building stellar websites for early startups</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt.
           </p>
-          <div className="flex max-sm:flex-col items-center max-lg:justify-center gap-5 xl:gap-10">
+          <div className="flex items-center gap-5 max-lg:justify-center max-sm:flex-col xl:gap-10">
             <Link to="/projects">
               <Button>View our work</Button>
             </Link>
@@ -33,7 +33,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="shrink-0 lg:w-1/2 max-lg:w-4/5 mx-auto max-lg:max-w-[600px]">
+        <div className="mx-auto shrink-0 max-lg:w-4/5 max-lg:max-w-[600px] lg:w-1/2">
           <img src={heroImg} alt="hero" className="" />
         </div>
       </div>
